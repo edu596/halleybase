@@ -1,8 +1,8 @@
 <?php
 define("DB_HOST","localhost");
-define("DB_USERNAME", "ago08ted_earoni");
-define("DB_PASSWORD", "7pDramPW0mxP");
-define("DB_NAME", "ago08ted_acceso");
+define("DB_USERNAME", "aqui");
+define("DB_PASSWORD", "aqui");
+define("DB_NAME", "aqui");
 define("DB_ENCODE","utf8");
 define("PRO_NOMBRE","SISTEMA HALLEY");
 ?>
