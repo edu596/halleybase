@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HALLEY-------</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../public/css/font-awesome.css">
+
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../public/css/login.css">
+    <!-- <link rel="stylesheet" href="../public/css/jquery.dataTables.min.css">     -->
+
+
+  </head> 
+
+
+<!-- ORIGINAL -->
+  <body class="hold-transition login-page">
+   <div class="login-box">
+   </div><!--/.login-box -->
+
+
+
+
+<div id="login-button" data-toggle="tooltip" title="ACCESO AL SISTEMA">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+  </img>
+</div>
+
+<div id="container">
+        <h1>HALLEY</h1>
+        <span class="close-btn">
+        <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+
+        <form method="post"  class="formulario" id="frmAcceso"  name="frmAcceso" >
+
+
+          <div class="grupo">  
+
+            <h3>Ruc Empresa: 20603504969</h3>
+            <input type="number" pattern="[0-9]*" inputmode="numeric" id="rucEmp" name="rucEmp"  placeholder="Ejm. 20603504969" onchange="BuscarEmpresa()"
+            autofocus="true" onkeypress="focoempresa(event)" >
+
+            <input type="hidden" name="UserBd" id="UserBd">
+            <input type="hidden" name="PasswordBd" id="PasswordBd">
+            <input type="hidden" name="NombreBaseDatos" id="NombreBaseDatos">
+            <input type="hidden" name="EstadoEmpre" id="EstadoEmpre">
+ 
+              <h3>Empresa</h3>
+            <input type="text" name="Nombrempresa" id="Nombrempresa" readonly="true">
+            <input type="hidden" name="empresa" id="empresa" >
+
+            <h3>Usuario</h3>
+            <input id="logina" name="logina"  placeholder="Usuario" autofocus="true" value="admin" onkeypress="focusAgrArt(event)">
+            <h3>Password</h3>
+            <input type="password" id="clavea" name="clavea" placeholder="Password" value="admin">
+            
+          
+       <button  class="acceso">Ingresar</button>
+
+            </div>
+        </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="login-button2" data-toggle="tooltip" title="CONSULTA DE COMPROBANTES">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/explore-w-icon.png">
+  </img>
+</div>
+
+<div id="container2">
+  <div class="tabs">
+    <div class="tab-container">
+    
+    <span class="close-btn2">
+        <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+
+    <div id="tab3" class="tab" style=""> 
+      
+      <a href="#tab3">ADMINISTRACIÓN</a>
+      <div class="tab-content">
+        <form method="post" id="frmConsultaComp"  name="frmConsultaComp" action="../reportes/exComprobante.php" method="POST" target="_blank" >
+        <h2>LISTADO DE EMPRESAS</h2>
+         <div class="table-responsive" id="listadoregistros">
+            <label>LISTADO DE EMPRESAS</label>
+            <select id="listadoempresa" name="listadoempresa"></select>
+
+            <label>CAMBIAR ESTADO</label>
+            <select id="cestado" name="cestado">
+              <option value="1" >ACTIVO</option>
+              <option value="2" >INACTIVO</option>
+            </select>
+
+      </div>
+      </form>
+      </div>
+      
+    </div>
+
+
+
+    <div id="tab2" class="tab">
+      <a href="#tab2">ACCESO </a>
+      <div class="tab-content">
+        <form method="post"  class="formulario" id="frmAcceso"  name="frmAcceso" >
+          
+            <table style="align-content: center">
+              <tr>
+            <td>
+              <input type="password" id="PasswordAdmin" name="PasswordAdmin"  placeholder="CLAVE ADMINISTRADOR" "
+            autofocus="true">
+          </td>
+        </tr>
+        <tr>
+          <td>
+           <button  class="acceso">ACCEDER</button>
+         </td>
+       </tr>
+           </table>
+
+            
+        </form>
+      </div>
+    </div> 
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- jQuery -->
+<script src="../public/js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap 3.3.5 -->
+<!-- <script src="../public/js/bootstrap.min.js"></script> -->
+
+<!-- Bootstrap 5 -->
+<!-- <script src="../public/bootstrap/js/bootstrap.min.js"></script> -->
+
+<!-- Bootbox -->
+<!-- <script src="../public/js/bootbox.min.js"></script> -->
+<script type="text/javascript" src="scripts/login.js"></script>
+<script src="../public/css/jquery.dataTables.min.js"></script>    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> 
+
+
+
+
+</body>
+
+
+</html> 

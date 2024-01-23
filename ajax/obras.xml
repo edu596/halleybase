@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obras>
+	<obra inicio="10/02/2015" final="31/10/2016" contratista="Actuaciones Urbanas" presupuesto="20.000.000">
+		Construcción de aparcamiento en el centro
+		<personal_tecnico miembros="3">
+			<miembro cargo="arquitecto">
+				Pedro Steven De Gloria
+			</miembro>
+			<miembro cargo="aparejador">
+				Manuela Gracia Salmerón
+			</miembro>
+			<miembro cargo="supervisor">
+				Andrés Garrido Fuentes
+			</miembro>
+		</personal_tecnico>
+	</obra>
+	<obra inicio="06/08/2016" final="01/11/2016" contratista="Obras del Norte" presupuesto="6.500.000">
+		Adaptación de estación suburbana
+		<personal_tecnico miembros="4">
+			<miembro cargo="arquitecto">
+				Manuel Alarcón Rodríguez
+			</miembro>
+			<miembro cargo="aparejador">
+				Carlos Torres Fuentes
+			</miembro>
+			<miembro cargo="director_de_tunelacion">
+				María García Pérez
+			</miembro>
+			<miembro cargo="jefe_de_compras">
+				Antonia Bisonette Tristán
+			</miembro>
+		</personal_tecnico>
+	</obra>
+	<obra inicio="02/02/2014" final="26/05/2017" contratista="Iluminación y Electricidad, SA" presupuesto="7.800.000">
+		Electrificación de zona restringida
+		<personal_tecnico miembros="2">
+			<miembro cargo="jefe_de_electricistas">
+				Laura De la Iglesia Cifuentes
+			</miembro>
+			<miembro cargo="responsable_de_control">
+				Yolanda Torres Torres
+			</miembro>
+		</personal_tecnico>
+	</obra>
+</obras>

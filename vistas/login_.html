@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HALLEY</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <!-- <link rel="stylesheet" href="../public/css/bootstrap.min.css"> -->
+
+    <!-- Bootstrap 5 -->
+    <!-- <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css"> -->
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../public/css/font-awesome.css">
+    <!-- <script src="https://kit.fontawesome.com/7d313961eb.js" crossorigin="anonymous"></script> -->
+   
+    <!-- Theme style -->
+    <!-- <link rel="stylesheet" href="../public/css/AdminLTE.min.css"> -->
+    <!-- <link rel="stylesheet" href="../public/adminlte/css/adminlte.min.css"> -->
+     
+
+
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../public/css/login.css">
+
+  </head>
+
+
+<!-- ORIGINAL -->
+  <body class="hold-transition login-page">
+   <div class="login-box">
+   </div><!--/.login-box -->
+
+
+
+
+<div id="login-button" data-toggle="tooltip" title="ACCESO AL SISTEMA">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+  </img>
+</div>
+
+<div id="container">
+        <h1>HALLEY</h1>
+        <span class="close-btn">
+        <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+
+        <form method="post"  class="formulario" id="frmAcceso"  name="frmAcceso" >
+
+
+          <div class="grupo">  
+
+            <h3>Ruc Empresa</h3>
+            <input type="number" pattern="[0-9]*" inputmode="numeric" id="rucEmp" name="rucEmp"  placeholder="Ruc empresa" onchange="BuscarEmpresa()"
+            autofocus="true" onkeypress="focoempresa(event)">
+
+            <input type="hidden" name="UserBd" id="UserBd">
+            <input type="hidden" name="PasswordBd" id="PasswordBd">
+            <input type="hidden" name="NombreBaseDatos" id="NombreBaseDatos">
+            <input type="hidden" name="EstadoEmpre" id="EstadoEmpre">
+ 
+              <h3>Empresa</h3>
+            <input type="text" name="Nombrempresa" id="Nombrempresa" readonly="true">
+            <input type="hidden" name="empresa" id="empresa" >
+
+            <h3>Usuario</h3>
+            <input id="logina" name="logina"  placeholder="Usuario" autofocus="true" value="admin" onkeypress="focusAgrArt(event)">
+            <h3>Password</h3>
+            <input type="password" id="clavea" name="clavea" placeholder="Password" value="admin">
+            
+          
+       <button  class="acceso">Ingresar</button>
+
+            </div>
+        </form>
+</div>
+
+
+
+<div id="login-button2" data-toggle="tooltip" title="ADMINISTRACIÓN DE EMPRESAS">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/explore-w-icon.png">
+  </img>
+</div>
+
+
+         
+         <div class="modal fade" id="myModalGuia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" style="width: 100%  !important; opacity: 5;">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+
+<div class="form-group  col-lg-12 col-sm-12 col-md-12 col-xs-12">
+        <div class="table-responsive">
+          <table id="tblguias" class="table table-striped table-bordered table-condensed table-hover" >
+            <thead>
+                <th>Seleccionar</th>
+                <th>Número Guia</th>
+                <th>Fecha</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>        
+      </div>
+    </div>
+  </div>  
+
+
+
+
+
+
+
+<!-- <div id="login-button2" data-toggle="tooltip" title="CONSULTA DE COMPROBANTES">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/explore-w-icon.png">
+  </img>
+</div>
+
+<div id="container2">
+<form method="post" id="frmConsultaComp"  name="frmConsultaComp" action="../reportes/exComprobante.php" method="POST" target="_blank" >
+
+          <h2>PARA CLIENTES</h2>
+          <span class="close-btn2">
+        <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+
+
+            <h3>Nosotros</h3>
+            <select name="empresaConsulta" id="empresaConsulta" onchange="empresa()" >
+              <option value="ago08ted_enviodirecto" selected="true">ago08ted_enviodirecto</option>
+            </select>
+            
+          
+          <input type="hidden" name="idempresa" id="idempresa" value="1">
+
+          <h3>Tipo de comprobante</h3>
+           
+            <select  name="tipodoc" id="tipodoc" title="seleccione" >
+              <option value="01">FACTURA</option>
+              <option value="03">BOLETA</option>
+              <option value="07">NOTA DE CRÉDITO</option>
+              <option value="08">NOTA DE DÉBITO</option>
+            </select>
+          
+            
+          
+            <h3>Ingrese su ruc</h3>
+            <input name="nruc" id="nruc"  placeholder="Ej: 20603504969" maxlength="11" onfocus="focusTest(this);" onkeypress="return enter(event, this)">
+            
+            <h3>Folio del documento (Serie-Correlativo)</h3>
+            <input name="serienumero" id="serienumero" placeholder="Ej: FXXX-000" onfocus="focusTest(this);">
+            
+              <button class="pdf" name="boton" id="boton" value="btnpdf">PDF</button>
+
+              <button class="xml" name="boton" id="boton" value="btnxml">XML</button>
+
+              <button  class="rpta" name="boton" id="boton" value="btnrpta">RTA</button>
+            
+
+        </form>
+</div>
+ -->
+
+
+
+<!-- jQuery -->
+<script src="../public/js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap 3.3.5 -->
+<!-- <script src="../public/js/bootstrap.min.js"></script> -->
+
+<!-- Bootstrap 5 -->
+<!-- <script src="../public/bootstrap/js/bootstrap.min.js"></script> -->
+
+<!-- Bootbox -->
+<!-- <script src="../public/js/bootbox.min.js"></script> -->
+<script type="text/javascript" src="scripts/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+<!-- <script src="../public/adminlte/js/adminlte.min.js"></script> -->
+
+
+
+
+    
+    </body>
+
+
+</html> 

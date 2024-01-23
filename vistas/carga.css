@@ -1,0 +1,280 @@
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('pageLoader.gif') 50% 50% no-repeat rgb(255,255,255);
+    opacity: .8;
+}
+
+/*.loader2 {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('pageLoader.gif') 50% 50% no-repeat rgb(255,255,255);
+    opacity: .8;
+}*/
+
+
+a.fa-globe {
+  position: relative;
+  font-size: 2em;
+  color: grey;
+  cursor: pointer;
+}
+span.fa-comment {
+  position: absolute;
+  font-size: 0.6em;
+  top: -4px;
+  color: red;
+  right: -4px;
+}
+span.num {
+  position: absolute;
+  font-size: 0.3em;
+  top: 1px;
+  color: #fff;
+  right: 2px;
+}
+
+
+
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+display: none;
+transition: all .3s linear;
+}
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+display: block;
+width: auto;
+margin: 0 auto;
+padding: 5px 20px;
+background: #505cfd;
+cursor: pointer;
+border-radius: 5pt;
+color: #fff;
+text-align: center;
+transition: all .3s linear;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+/*color: #333;
+background: #ccc;*/
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0;
+transition: all .3s linear;
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+background-color: white;
+transition: all .3s linear;
+}
+
+
+
+/* Ocultar botón radio */
+input[id^="spoiler2"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler2"] + label {
+display: block;
+width: auto;
+margin: 0 auto;
+padding: 5px 20px;
+background: #00a65a;
+cursor: pointer;
+border-radius: 5pt;
+color: #fff;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler2"]:checked + label {
+/*color: #333;
+background: #ccc;*/
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler2"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0;
+}
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler2"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+background-color: white;
+}
+
+
+/* Ocultar botón radio */
+input[id^="spoiler3"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler3"] + label {
+display: block;
+width: auto;
+margin: 0 auto;
+padding: 5px 20px;
+background: #505cfd;
+cursor: pointer;
+border-radius: 5pt;
+color: #fff;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler3"]:checked + label {
+/*color: #333;
+background: #ccc;*/
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler3"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0;
+}
+
+
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler3"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+background-color: white;
+}
+
+
+
+/* Ocultar botón radio */
+input[id^="spoiler4"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler4"] + label {
+display: block;
+width: auto;
+margin: 0 auto;
+padding: 5px 20px;
+background: #505cfd;
+cursor: pointer;
+border-radius: 5pt;
+color: #fff;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler4"]:checked + label {
+/*color: #333;
+background: #ccc;*/
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler4"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0;
+}
+
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler4"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+background-color: white;
+}
+
+
+
+/* Ocultar botón radio */
+input[id^="spoiler5"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler5"] + label {
+display: block;
+width: auto;
+margin: 0 auto;
+padding: 5px 20px;
+background: #505cfd;
+cursor: pointer;
+border-radius: 5pt;
+color: #fff;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler5"]:checked + label {
+/*color: #333;
+background: #ccc;*/
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler5"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0;
+}
+
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler5"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+background-color: white;
+}
+
+
+
+
+/* Ocultar botón radio */
+input[id^="spoiler6"]{
+display: none;
+}
+/* Estilo botón clicable */
+input[id^="spoiler6"] + label {
+display: block;
+width: auto;
+margin: 0 auto;
+padding: 5px 20px;
+background: #505cfd;
+cursor: pointer;
+border-radius: 5pt;
+color: #fff;
+text-align: center;
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler6"]:checked + label {
+/*color: #333;
+background: #ccc;*/
+}
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler6"] ~ .spoiler {
+width: 90%;
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 10px auto 0;
+}
+
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler6"]:checked + label + .spoiler{
+height: auto;
+opacity: 1;
+background-color: white;
+}

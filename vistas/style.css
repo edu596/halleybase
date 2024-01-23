@@ -1,0 +1,163 @@
+body
+{
+
+	margin:0;
+	padding: 0;
+	background: : #f3f3f3;
+
+}
+.center
+{
+	position: :absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+input[type="checkbox"]
+{
+
+	position: relative;
+	width: 40px;
+	height: 20px;
+	-webkit-appearance:none;
+	background: #c6c6c6;
+	outline: none;
+	border-radius:20px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+	/*transition: .5s;*/
+}
+
+input:checked[type="checkbox"]
+{
+	background: #03a9f4;
+}
+
+
+
+input[type="checkbox"]:before
+{
+	content:'';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	top: 0;
+	left:0;
+	background: #fff;
+	transform: scale(1.1);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:before
+{
+	left: 20px;
+}
+
+
+
+
+
+.breadcrumb {
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#content {
+    margin-bottom: 25px;
+    height: 5000px;
+}
+
+.adsbygoogle {
+    margin-bottom: 15px;
+}
+
+.footer-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.footer a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+
+
+.my-fixed-item {
+    position: fixed;
+    min-height: 800px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 252px;
+    border-radius: 15px;
+    background-color: rgb(255,255,255,.5); /* o background-color:#000000; */
+    opacity: 0.2;
+}
+
+.my-fixed-item:hover {
+opacity: 1;	
+background-color: white; /* o background-color:#000000; */
+}
+
+/*Bootstrap example */
+.position-fixed {
+    width: 252px;
+    min-height: 120px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+
+#app-messenger, #app-whatsapp{
+	position: fixed;
+	right: 24px;
+	bottom: 25px;
+	width: 60px;
+	z-index: 1000;
+	display: none;
+}
+#app-whatsapp{
+	bottom: 25px;
+	right: 100px;
+	z-index: 1000;
+	display: block;
+}
+#app-messenger i, #app-whatsapp i{
+	font-size: 63px;
+}
+#app-whatsapp i{
+	color: #1ebea5;
+}
+#app-messenger i{
+	color: #0084ff;	
+}
+
+
+
+@media screen and (max-width: 766px){
+	#fb-root{
+		display: none;
+	}
+	#app-messenger{
+		display: block;
+	}
+}
+

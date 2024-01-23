@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+ @font-face
+  {font-family:Wingdings;
+  panose-1:5 0 0 0 0 0 0 0 0 0;
+  mso-font-charset:2;
+  mso-generic-font-family:auto;
+  mso-font-pitch:variable;
+  mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+  {font-family:"Cambria Math";
+  panose-1:2 4 5 3 5 4 6 3 2 4;
+  mso-font-charset:1;
+  mso-generic-font-family:roman;
+  mso-font-format:other;
+  mso-font-pitch:variable;
+  mso-font-signature:0 0 0 0 0 0;}
+@font-face
+  {font-family:"Arial Unicode MS";
+  panose-1:2 11 6 4 2 2 2 2 2 4;
+  mso-font-charset:128;
+  mso-generic-font-family:swiss;
+  mso-font-pitch:variable;
+  mso-font-signature:-134238209 -371195905 63 0 4129279 0;}
+@font-face
+  {font-family:Calibri;
+  panose-1:2 15 5 2 2 2 4 3 2 4;
+  mso-font-charset:0;
+  mso-generic-font-family:swiss;
+  mso-font-pitch:variable;
+  mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+  {font-family:"Segoe UI";
+  panose-1:2 11 5 2 4 2 4 2 2 3;
+  mso-font-charset:0;
+  mso-generic-font-family:swiss;
+  mso-font-pitch:variable;
+  mso-font-signature:-520084737 -1073683329 41 0 479 0;}
+@font-face
+  {font-family:"\@Arial Unicode MS";
+  panose-1:2 11 6 4 2 2 2 2 2 4;
+  mso-font-charset:128;
+  mso-generic-font-family:swiss;
+  mso-font-pitch:variable;
+  mso-font-signature:-134238209 -371195905 63 0 4129279 0;}
+@font-face
+  {font-family:"Trebuchet MS";
+  panose-1:2 11 6 3 2 2 2 2 2 4;
+  mso-font-charset:0;
+  mso-generic-font-family:swiss;
+  mso-font-pitch:variable;
+  mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+  {mso-style-unhide:no;
+  mso-style-qformat:yes;
+  mso-style-parent:"";
+  margin-top:0cm;
+  margin-right:0cm;
+  margin-bottom:8.0pt;
+  margin-left:0cm;
+  line-height:105%;
+  mso-pagination:widow-orphan;
+  font-size:11.0pt;
+  font-family:"Calibri",sans-serif;
+  mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+  {mso-style-noshow:yes;
+  mso-style-priority:99;
+  color:#0563C1;
+  mso-themecolor:hyperlink;
+  text-decoration:underline;
+  text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+  {mso-style-noshow:yes;
+  mso-style-priority:99;
+  color:#954F72;
+  mso-themecolor:followedhyperlink;
+  text-decoration:underline;
+  text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+  {mso-style-noshow:yes;
+  mso-style-priority:99;
+  mso-style-link:"Texto de globo Car";
+  margin:0cm;
+  margin-bottom:.0001pt;
+  mso-pagination:widow-orphan;
+  font-size:9.0pt;
+  font-family:"Segoe UI",sans-serif;
+  mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;}
+span.TextodegloboCar
+  {mso-style-name:"Texto de globo Car";
+  mso-style-noshow:yes;
+  mso-style-priority:99;
+  mso-style-unhide:no;
+  mso-style-locked:yes;
+  mso-style-link:"Texto de globo";
+  mso-ansi-font-size:9.0pt;
+  mso-bidi-font-size:9.0pt;
+  font-family:"Segoe UI",sans-serif;
+  mso-ascii-font-family:"Segoe UI";
+  mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:"Segoe UI";
+  mso-bidi-font-family:"Segoe UI";
+  mso-fareast-language:ES-PE;}
+span.SpellE
+  {mso-style-name:"";
+  mso-spl-e:yes;}
+.MsoChpDefault
+  {mso-style-type:export-only;
+  mso-default-props:yes;
+  font-size:10.0pt;
+  mso-ansi-font-size:10.0pt;
+  mso-bidi-font-size:10.0pt;
+  font-family:"Calibri",sans-serif;
+  mso-ascii-font-family:Calibri;
+  mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:Calibri;
+  mso-fareast-theme-font:minor-latin;
+  mso-hansi-font-family:Calibri;
+  mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";
+  mso-bidi-theme-font:minor-bidi;
+  mso-fareast-language:EN-US;}
+@page WordSection1
+  {size:612.0pt 792.0pt;
+  margin:70.85pt 3.0cm 70.85pt 3.0cm;
+  mso-header-margin:35.4pt;
+  mso-footer-margin:35.4pt;
+  mso-paper-source:0;}
+div.WordSection1
+  {page:WordSection1;}  
+.block-prt{ 
+   visibility:hidden; 
+   display: none; 
+}
+.visi{ 
+   visibility:visible; 
+   display: inline; 
+}
+#copy{
+  float:none;
+  clear:both;}
+.clear{
+  float:none;
+  clear:both;}
+#copied{
+  float:none;
+  clear:both;}
+
+
+
+
+  #marca {
+  font-size: 16px;
+}
+#marca:after {
+  content: url('../src/extranet/images/sello-copia.png');
+  font-size: 15em;  
+  color: rgba(52, 166, 214, 0.4);
+  z-index: 9999;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 40;
+  right: 0;
+  left: 0;
+    
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+table{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    
+}
+
+  /* para 980px o menos */
+  @media screen and (max-width:980px) {
+    table {
+      width:98%;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 11px;
+    }
+    #marca{
+      width: 98%;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    #busqueda{
+      width: 98%;
+    }
+  }
+  /* para 980px o menos */
+  @media screen and (max-width:560px) {
+    table {
+      width:50%;
+      font-family:  Arial, Helvetica, sans-serif;
+      font-size: 11px;
+    }
+    #marca{
+      width: 50%;
+    }
+    #busqueda{
+      width: 50%;
+    }
+  }
+input:focus {
+     background-color: yellow;
+     border-bottom: 1px solid #000;}
+td{
+    
+    align: center;
+}
+.bordegen {
+    border-style: solid;
+    border-color: #000000;
+}
+.bordesup {
+    border-top: thin solid #000000;
+}
+.bordesupa {
+    border-top: thin dotted #000000;
+}
+.bordeinf {
+    border-bottom: thin solid #000000;
+}
+.bordeinfa {
+    border-bottom: thin dotted #000000;
+}
+.bordeizq {
+    border-left: thin solid #000000;
+}
+.bordeizqa {
+    border-left: thin dotted #000000;
+}
+.bordeder {
+    border-right: thin solid #000000;
+}
+.bordedera {
+    border-right: thin dotted #000000;
+}
+hr.style4 {
+    border-top: 1px dotted #8c8b8b;
